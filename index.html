@@ -11,7 +11,7 @@
     
     <style>
         .bg-1 {
-          background-color: #1abc9c; /* Green */
+          background-color: #23222e; /* Green */
           color: #ffffff;
         }
         #selfy{width: 150px;}
@@ -26,9 +26,9 @@
         color: #555555;
         }
 
-        .bg-3 {
-        background-color: #ffffff; /* White */
-        color: #555555;
+        .bg-4 {
+        background-color: #818181; /* White */
+        color: #fffafa;
         }
 
         .container-fluid {
@@ -59,6 +59,25 @@
             margin-top: 30px;
           }
           
+        }
+
+        .col-sm-4 {
+        display: flex;
+        flex-direction: column;  
+        justify-content: center; 
+        align-items: center;     
+        text-align: center;      
+        height: 100%;            
+        }
+
+        p, h1, h2, h3, h4, i {
+        margin-bottom: 15px; 
+        }
+
+        i{margin-right: 10px;}
+        .col-sm-4 img {
+        max-width: 100%; 
+        height: auto;    
         }
     </style>
 </head>
@@ -92,32 +111,34 @@
 
     <div id="me" class="container-fluid bg-2 text-center">
         <h3>What Am I?</h3>
-        <p>Lorem ipsum..</p>
+        <p>SKILL : HTML, CSS, Javascripts, C++</p>
         <a href="https://github.com/kiiiiri" class="btn btn-default btn-lg" target="_blank">My Github</a>
     </div>
       
     <div id="connect" class="container-fluid bg-3 text-center">
         <h3>Where To Find Me?</h3>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/kiiiiri"><i class="fa-brands fa-github"></i></a>
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://thread-watcher-7c9.notion.site/1741d0c97a6280598b29d6761f92390e"><i class="fa-solid fa-book"></i></a>
         <p>KAKAOTALK ID : </p>
         <p>EMAIL : </p>
     </div>
 
     <div id="portfolio" class="container-fluid bg-4 text-center">
         <h3>PORTFOLIO</h3>
+        <h4>mini Project</h4>
         <div class="row">
           <div class="col-sm-4">
-            <p>쿠팡이츠 데모</p>
+            <p>coupangeats demo</p>
             <a href="https://kiiiiri.github.io/coupangeats/index.html" target="_blank">
             <img src="img/coupangeats.png" alt="Image" class="img-responsive"></a>
-         <!-- 모달 --------------------------------------------------------------------------------->
+         <!-- 모달 
         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">More</button>
         
         <div id="myModal" class="modal fade" role="dialog">
           <div class="modal-dialog">
-            <!-- Modal content-->
+       
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -133,15 +154,15 @@
 
           </div>
         </div>
-        <!-- /모달 -->
+      /모달 -->
           </div>
           <div class="col-sm-4">
-            <p>Lorem ipsum..</p>
-            <img src="birds2.jpg" alt="Image" class="img-responsive">
+            <p>Dior demo</p>
+            <a href="https://kiiiiri.github.io/Dior/"><img src="img/dior.png" alt="Image" class="img-responsive"></a>
           </div>
           <div class="col-sm-4">
-            <p>Lorem ipsum..</p>
-            <img src="birds3.jpg" alt="Image" class="img-responsive">
+            <p>T1 demo</p>
+            <a href="https://kiiiiri.github.io/T1/"><img src="img/T1.png" alt="Image" class="img-responsive"></a>
           </div>
         </div>
       </div>
