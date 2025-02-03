@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .bg-1 {
+          background-color: #1abc9c; /* Green */
+          color: #ffffff;
+        }
+        #selfy{width: 150px;}
+
+        .bg-2 {
+        background-color: #474e5d; /* Dark Blue */
+        color: #ffffff;
+        }
+
+        .bg-3 {
+        background-color: #ffffff; /* White */
+        color: #555555;
+        }
+
+        .bg-3 {
+        background-color: #ffffff; /* White */
+        color: #555555;
+        }
+
+        .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        }
+
+        .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+        color: #1abc9c !important;
+        }
+
+        .bg-5 {
+        background-color: #2f2f2f;
+        color: #ffffff;
+        }
+        @media screen and (max-width:767px) {
+          #portfolio p {
+            margin-top: 30px;
+          }
+          
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Me</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about">WHO</a></li>
+              <li><a href="#me">WHAT</a></li>
+              <li><a href="#connect">WHERE</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div id="about" class="container-fluid bg-1 text-center">
+        <h3>Who Am I?</h3>
+        <img id="selfy" src="img/KakaoTalk_20250122_134639766.png" alt="sumin" class="img-circle">
+        <h3>I'm a junior developer</h3>
+    </div>
+
+    <div id="me" class="container-fluid bg-2 text-center">
+        <h3>What Am I?</h3>
+        <p>Lorem ipsum..</p>
+        <a href="https://github.com/kiiiiri" class="btn btn-default btn-lg" target="_blank">My Github</a>
+    </div>
+      
+    <div id="connect" class="container-fluid bg-3 text-center">
+        <h3>Where To Find Me?</h3>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <p>KAKAOTALK ID : </p>
+        <p>EMAIL : </p>
+    </div>
+
+    <div id="portfolio" class="container-fluid bg-4 text-center">
+        <h3>PORTFOLIO</h3>
+        <div class="row">
+          <div class="col-sm-4">
+            <p>쿠팡이츠 데모</p>
+            <a href="https://kiiiiri.github.io/coupangeats/index.html" target="_blank">
+            <img src="img/coupangeats.png" alt="Image" class="img-responsive"></a>
+         <!-- 모달 --------------------------------------------------------------------------------->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">More</button>
+        
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">개발 내용</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /모달 -->
+          </div>
+          <div class="col-sm-4">
+            <p>Lorem ipsum..</p>
+            <img src="birds2.jpg" alt="Image" class="img-responsive">
+          </div>
+          <div class="col-sm-4">
+            <p>Lorem ipsum..</p>
+            <img src="birds3.jpg" alt="Image" class="img-responsive">
+          </div>
+        </div>
+      </div>
+
+      <footer class="container-fluid bg-5 text-center">
+        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+      </footer>
+</body>
+
+
+</html>
